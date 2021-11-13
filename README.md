@@ -4,12 +4,7 @@ We build an input inference classifier based on Axolotl (https://github.com/toma
 
 # Dependencies
 
-Python 2.7.12
-keras 2.3.1
-sklearn 0.20.4
-matplotlib 2.1.0
-numpy 1.16.4
-tensorflow 1.14.0
+Python 2.7.12, keras 2.3.1, sklearn 0.20.4, matplotlib 2.1.0, numpy 1.16.4, tensorflow 1.14.0
 
 # Dataset
 
