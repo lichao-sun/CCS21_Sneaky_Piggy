@@ -1,22 +1,31 @@
-# Axolotl
+# Input inference classifier
 
-## About
+We build an input inference classifier based on Axolotl (https://github.com/tomasreimers/axolotl) and we modified it to work with a Google Pixel 4 device by changing different settings (e.g., display resolution, ppi density, etc.). Additionally, we have developed a component for mapping the predicted coordinates into key labels.
 
-Axolotl is a library that attempts to discern user screen taps from the
-motion of the accelerometer and gyroscope.
+# Dependencies
 
-Key files:
+Python 2.7.12
+keras 2.3.1
+sklearn 0.20.4
+matplotlib 2.1.0
+numpy 1.16.4
+tensorflow 1.14.0
 
- - `visualize.py`: This visualizes the data in various ways, because *data
- science is important*.
- - `learn_touches.py`: This learns what samples are touches.
- - `learn_location.py`: This learns the location for samples of touches.
- - `stats.py`: Runs both learn_touches and learn_location on all samples and
- reports statistics.
+# Dataset
 
-This can all be run with python with the current working directory set to the
-root directory of this repository.
+We created two datasets for training our classifiers. A mock app is used for loading a webpage that calls the HTML5 functions that access motion sensors
+and outputs sensors values to logcat. Additionally, apart from the accelerometer and gyroscope values, we log the coordinates (i.e., x,y) while touching the screen, which are then normalized between -1 and 1. A value of -2 is used to indicate that no touch occurred at that time. Using this setup we created two different typing datasets. One dataset contains samples created using two-handed typing, while the other contains samples created using one-handed typing. In both datasets keys were pressed randomly for one hour.
 
-## Authors
+One-handed typing dataset files: diamantTest_accel_1hand.txt, diamantTest_gyro_1hand.txt
 
-(c) Tomas Reimers, Greg Foster 2016
+Two-handed typing dataset files: diamantTest_accel_2hands.txt, diamantTest_gyro_2hands.txt
+
+# How to run the code:
+
+
+
+**Paper**
+
+For technical details please refer to our publication:
+
+This Sneaky Piggy Went to the Android Ad Market: Misusing Mobile Sensors for Stealthy Data Exfiltration
