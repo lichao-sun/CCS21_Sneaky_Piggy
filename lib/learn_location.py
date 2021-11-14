@@ -848,7 +848,7 @@ if __name__ == "__main__":
         # learn_location("100CCmerged_accel.txt", "100CCmerged_gyro.txt", params)
 
 
-    #2Hands dataset, Best result: 41.84%, nb_epoch=500, batch_size=30
+    #2Hands dataset, nb_epoch=500, batch_size=30
     # learn_location("diamantTest_accel_2hands.txt", "diamantTest_gyro_2hands.txt", params)
     # learn_location_gru_mse("diamantTest_accel_2hands.txt", "diamantTest_gyro_2hands.txt", params)
     # learn_location_mlp_softmax("diamantTest_accel_2hands.txt", "diamantTest_gyro_2hands.txt", params)
@@ -860,7 +860,7 @@ if __name__ == "__main__":
     # learn_location_gru_softmax("2handtyping1hour_accel.txt", "2handtyping1hour_gyro.txt", params)
 
 
-    #1Hand dataset,Best result: 29.49%, nb_epoch=50,batch_size=10
+    #1Hand dataset, nb_epoch=50,batch_size=10
     # learn_location("diamantTest_accel_1hand.txt", "diamantTest_gyro_1hand.txt", params)
     # learn_location_gru_mse("diamantTest_accel_1hand.txt", "diamantTest_gyro_1hand.txt", params)
     # learn_location_mlp_softmax("diamantTest_accel_1hand.txt", "diamantTest_gyro_1hand.txt", params)
