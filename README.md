@@ -11,13 +11,13 @@ Python 2.7.12, keras 2.3.1, sklearn 0.20.4, matplotlib 2.1.0, numpy 1.16.4, tens
 We created two datasets for training our classifiers. A mock app is used for loading a webpage that calls the HTML5 functions that access motion sensors
 and outputs sensors values to logcat. Additionally, apart from the accelerometer and gyroscope values, we log the coordinates (i.e., x,y) while touching the screen, which are then normalized between -1 and 1. A value of -2 is used to indicate that no touch occurred at that time. Using this setup we created two different typing datasets. One dataset contains samples created using two-handed typing, while the other contains samples created using one-handed typing. In both datasets keys were pressed randomly for one hour.
 
-One-handed typing dataset files: ???
+One-handed typing dataset files: 1handtyping1hour_accel.txt, 1handtyping1hour_gyro.txt
 
-Two-handed typing dataset files: ???
+Two-handed typing dataset files: 2handtyping1hour_accel.txt, 2handtyping1hour_gyro.txt
 
 **How to run the code:**
 
-???
+In ../lib/learn_location.py, you can run this project. The hyper-parameter setting is also in this file from line 828 - line 839. The different learning models are provided, and could be activated from line 851 - line 872.
 
 **Paper**
 
