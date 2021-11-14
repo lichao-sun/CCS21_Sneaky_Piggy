@@ -842,9 +842,9 @@ if __name__ == "__main__":
     # params['m'] = 1
     # params['n'] = 3187
 
-    for i in range(10):
-        params['test_file_id'] = str(i)
-        learn_location_gru_mse("100CCmerged_accel.txt", "100CCmerged_gyro.txt", params)
+    # for i in range(10):
+        # params['test_file_id'] = str(i)
+        # learn_location_gru_mse("100CCmerged_accel.txt", "100CCmerged_gyro.txt", params)
         # learn_location("100CCmerged_accel.txt", "100CCmerged_gyro.txt", params)
 
 
